@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="周鑫宇 sep-zxy：把 AI 做进真实产品。Agent、知识检索与开发者工具。" />
+  <img src="./assets/hero-geek.webp" width="100%" alt="周鑫宇 sep-zxy：把 AI 做进真实产品。Agent、知识检索与开发者工具。" />
 </p>
 
 <p align="center">
@@ -11,11 +11,11 @@
 
 ### 👋 关于我
 
-我是周鑫宇，一名 **AI 全栈开发者**。喜欢把重复操作做成工具，也喜欢研究怎样让 Agent 接上真实业务。
+我是周鑫宇，**AI 全栈开发，专注 Agent 系统与知识工程**。负责过业务 Agent 核心后端，独立设计并落地数据服务，也维护自己的开源工具。
 
-- 🧠 做过 **Agent 工具调用、知识检索、会话记忆与任务恢复**。
-- 🛠️ 独立设计并落地 **core-data**，也负责过小程序从后端、前端到部署上线的完整交付。
-- 🌱 正在做 [知枝](https://github.com/sep-zxy/zhizhi)：把项目实践和阅读，沉淀成自己的知识。
+- 🧠 **Agent 工程**：负责 AI Dock 的核心服务、业务工具与会话任务系统，处理事实约束、任务恢复、重复执行和旧结果提交。
+- 🛠️ **知识与数据系统**：独立设计并落地 **core-data**，贯通证据加工、Wiki 画像、混合检索、AI 审核和数据流水线。
+- 🌱 **开源与产品交付**：持续开发 [知枝](https://github.com/sep-zxy/zhizhi) 和 [GameMode Switcher](https://github.com/sep-zxy/game-mode-rust)，也做过约一周交付上线的小程序活动。
 - 💬 欢迎聊 AI 应用、开发者工具和自动化，也欢迎给我的开源项目提建议。
 
 <p>
@@ -30,8 +30,8 @@
 
 ### 🧩 开源作品
 
-<a href="https://github.com/sep-zxy/zhizhi"><img src="./assets/zhizhi-card.svg" width="49%" alt="知枝：从代码实践到自己的知识 Wiki，React / Electron / Python。" /></a>
-<a href="https://github.com/sep-zxy/game-mode-rust"><img src="./assets/gamemode-card.svg" width="49%" alt="GameMode Switcher：游戏与日常环境切换，Rust / Tauri v2 / Windows。" /></a>
+<a href="https://github.com/sep-zxy/zhizhi"><img src="./assets/zhizhi-geek.webp" width="49%" alt="知枝：从代码实践到自己的知识 Wiki，React / Electron / Python。" /></a>
+<a href="https://github.com/sep-zxy/game-mode-rust"><img src="./assets/gamemode-geek.webp" width="49%" alt="GameMode Switcher：游戏与日常环境切换，Rust / Tauri v2 / Windows。" /></a>
 
 <sub>知枝基于 AhaDiff 继续开发，保留上游署名与许可证。</sub>
 
@@ -45,11 +45,11 @@
 
 在闲晃担任 **AI 全栈开发（2026.07—2026.11）**，主要做了下面三件事：
 
-| 项目 | 我负责的部分 | 值得展开的点 |
+| 系统 | 个人贡献 | 核心工程能力 |
 | --- | --- | --- |
-| **AI Dock** | Agent 服务、业务工具、会话任务管理，协作前端接入 | 工具调用、事实校验卡片、任务取消与恢复 |
-| **core-data** | 独立设计、前后端开发与落地，约一周交付可用首版 | 混合检索、带证据的 Wiki、AI 审核、数据流水线 |
-| **万圣节互动活动** | 整体后端、前端还原、活动 Agent、部署运维和埋点 | 约一周开发上线，活动单日新增注册峰值约 **1000 人** |
+| **AI Dock** | Agent 后端核心开发；负责服务、工具与会话任务，协作前端接入 | 业务工具契约、事实约束、Worker 租约、执行版本与调用去重 |
+| **core-data** | 独立完成架构设计、前后端开发与落地，约一周交付可用首版 | PostGIS / pgvector 混合检索、证据链、受控写入、负载感知调度 |
+| **万圣节互动活动** | 整体后端、小程序前端、NPC Agent、部署运维与埋点 | 约一周完成交付；跨角色记忆与 SSE；活动单日注册峰值约 **1000 人** |
 
 <details>
 <summary>🔎 展开看看技术细节与数据规模</summary>
