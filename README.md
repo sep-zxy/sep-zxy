@@ -1,93 +1,77 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/hero.svg" width="100%" alt="周鑫宇 sep-zxy：把 AI 做进真实产品。Agent、知识检索与开发者工具。" />
+</p>
 
-# 周鑫宇 · sep-zxy
+<p align="center">
+  <a href="#-关于我">关于我</a> ·
+  <a href="#-开源作品">开源作品</a> ·
+  <a href="#-做过的产品">产品实践</a> ·
+  <a href="mailto:1583701031@qq.com">联系我</a>
+</p>
 
-**AI Agent · AI 后端 · 全栈交付**
+### 👋 关于我
 
-构建能调用业务工具、使用真实数据、支持失败恢复的 AI 应用。
+我是周鑫宇，一名 **AI 全栈开发者**。喜欢把重复操作做成工具，也喜欢研究怎样让 Agent 接上真实业务。
 
-[开源作品](#开源作品) · [技术实践](#技术实践) · [邮件联系](mailto:1583701031@qq.com)
+- 🧠 做过 **Agent 工具调用、知识检索、会话记忆与任务恢复**。
+- 🛠️ 独立设计并落地 **core-data**，也负责过小程序从后端、前端到部署上线的完整交付。
+- 🌱 正在做 [知枝](https://github.com/sep-zxy/zhizhi)：把项目实践和阅读，沉淀成自己的知识。
+- 💬 欢迎聊 AI 应用、开发者工具和自动化，也欢迎给我的开源项目提建议。
 
-</div>
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Rust-383838?style=flat-square&amp;logo=rust&amp;logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&amp;logo=tauri&amp;logoColor=111111" alt="Tauri" />
+</p>
 
----
+### 🧩 开源作品
 
-我做 AI 全栈开发，关注 **Agent 工具调用、知识检索、可靠任务执行与产品交付**。
+<a href="https://github.com/sep-zxy/zhizhi"><img src="./assets/zhizhi-card.svg" width="49%" alt="知枝：从代码实践到自己的知识 Wiki，React / Electron / Python。" /></a>
+<a href="https://github.com/sep-zxy/game-mode-rust"><img src="./assets/gamemode-card.svg" width="49%" alt="GameMode Switcher：游戏与日常环境切换，Rust / Tauri v2 / Windows。" /></a>
 
-在闲晃的项目中，我主要负责 AI Dock 的 Agent 服务、业务工具与会话任务管理，独立设计并落地 core-data 数据服务，也承担过从活动后端、小程序页面到部署运维的完整交付。
+<sub>知枝基于 AhaDiff 继续开发，保留上游署名与许可证。</sub>
 
-| 活动开发与上线 | 活动新增注册 | 地点记录 | 商品与门店关联 |
-| :---: | :---: | :---: | :---: |
-| **约 1 周** | **单日峰值约 1000 人** | **约 7.4 万条** | **45 万余条** |
+还有一些解决日常小麻烦的工具：
 
-活动注册数是整体业务成果；数据规模来自 2026 年 11 月 17 日简历整理时的数据库副本统计。
+- [校园网自动登录助手](https://github.com/sep-zxy/Auto-login-on-campus-network) — 面向巢湖学院，自动检测登录状态、开机静默联网。
+- [Better-CE-Switch](https://github.com/sep-zxy/Better-CE-Switch) — 用快捷键与超时回切管理中英文输入法。
+- [知枝 Next](https://github.com/sep-zxy/zhizhi-next) — 将内容采集、项目实践和个人知识网络连接起来，开发中。
 
-### 公司项目实践
+### 🚀 做过的产品
 
-#### AI Dock · 让 Agent 连接真实业务
+在闲晃担任 **AI 全栈开发（2026.07—2026.11）**，主要做了下面三件事：
 
-**主要负责 Agent 服务、业务工具及会话任务管理，前端由同事配合接入。**
-
-- **对话到工具执行**：基于 Pi Agent 接入店铺、路线、景点、摄影师及搭子等业务查询，结合页面上下文和用户条件完成多轮问答与追问补充。
-- **模型结果到业务交互**：将工具结果关联到结构化卡片，由服务端核验实体、事实来源和可执行动作；操作历史结果时重新检查当前业务条件。
-- **执行过程可恢复**：实现任务持久化、取消、恢复与追问续接，通过 Worker 租约、执行版本校验和调用去重，约束重复执行及旧结果写入。
-
-`Python` · `FastAPI` · `TypeScript` · `NestJS` · `PostgreSQL` · `Redis` · `Pi Agent`
-
-#### core-data · 面向 Agent 的地点知识与检索服务
-
-**独立设计、开发与落地，约一周交付可用首版，持续迭代服务与管理后台。**
-
-- **知识有来源**：关联高德 POI 与多平台口碑内容，完成证据抽取、特点归一、Wiki 画像生成及分段向量化，保留引用与版本，检查冲突和过时信息。
-- **检索融合多路信号**：结合画像向量、特点关系、文字匹配和用户回流知识，通过 RRF 融合与模型重排返回结果及匹配证据，支持地理条件筛选和重排超时降级。
-- **AI 判断与写入分离**：规则初筛，模型只读查证，低把握结果补证复判，疑难项转人工；执行器校验后统一写入，保留快照与撤回记录，累计形成 **9000 余条 AI 来源处理记录**。
-- **批量任务可管理**：统一采集、入库、团购、媒体、品牌与审核节点，实现状态持久化、依赖调度、暂停续跑和重试；结合机器负载与业务健康状态调节并发，使用 Redis Lua 原子预扣预算。
-
-`TypeScript` · `PostgreSQL` · `PostGIS` · `pgvector` · `pg_trgm` · `Prisma` · `Redis` · `BullMQ` · `React / Semi`
-
-AI 来源处理量统计于 2026 年 11 月 5—12 日，包含不同处理状态。
-
-#### 万圣节互动活动 · 从开发到上线约一周
-
-**负责整体后端、按设计稿实现小程序前端、自主设计活动 Agent，以及部署运维和行为埋点。**
-
-- 打通身份测试、六站任务、卡片收集与奖励兑换流程，支撑活动上线；活动新增注册 **单日峰值约 1000 人**。
-- 参考本人负责的 AI Dock 模块设计六站 NPC 对话，结合角色设定、商场资料及用户任务、兑换进度组织上下文。
-- 实现跨角色记忆、SSE 流式回复、限流、超时处理与失败兜底，衔接页面状态和后端业务流程。
-
-`微信原生小程序` · `TDesign` · `TypeScript` · `NestJS` · `PostgreSQL` · `Redis` · `SSE`
-
-### 开源作品
-
-| 项目 | 我在解决什么 |
-| --- | --- |
-| **[知枝 · Zhizhi](https://github.com/sep-zxy/zhizhi)** | 从 Git 提交与代码证据提炼知识，经过审阅、理解练习和 Wiki 草稿确认后沉淀到 Obsidian。React / Electron / Python，本地优先；基于 AhaDiff 继续开发。 |
-| **[GameMode Switcher](https://github.com/sep-zxy/game-mode-rust)** | 从 Python MVP 迭代到 Rust + Tauri v2，将应用启停、Clash / TUN / 系统代理切换和状态恢复组织为场景预设。 |
-| [知枝 Next](https://github.com/sep-zxy/zhizhi-next) | 持续探索内容采集、项目实践与个人知识网络的整合，开发中。 |
-| [校园网自动登录助手](https://github.com/sep-zxy/Auto-login-on-campus-network) | 面向巢湖学院，用 Python / Playwright 实现登录状态检测与开机静默登录，配套图形化配置。 |
-| [Better-CE-Switch](https://github.com/sep-zxy/Better-CE-Switch) | 用快捷键和超时回切减少中英文输入法切换操作。 |
-
-### 技术实践
-
-| 方向 | 项目中的具体实践 |
-| --- | --- |
-| **Agent 应用** | 业务工具封装、参数与身份校验、上下文组织、多轮追问、跨角色记忆、结构化卡片 |
-| **知识与检索** | 证据抽取、Wiki 画像、分段向量化、特点关系、RRF 融合、模型重排 |
-| **后端可靠性** | 持久化任务、Worker 租约、执行版本校验、调用去重、失败重试、预算控制 |
-| **全栈交付** | React / Semi、微信小程序 / TDesign、前后端联调、Docker Compose、服务器运维、行为埋点 |
-| **桌面与自动化** | Python、Playwright、Rust / Tauri、Windows 进程与代理管理 |
-
-### 经历与研究
-
-- **闲晃产品 · AI 全栈开发（2026.07—2026.11）**：Agent 服务、核心数据平台与活动全栈交付。
-- **合肥华宇智航 · 自动化工程师助理实习（2026.01—2026.03）**：储能监控数据接入、字段映射、告警规则与展示。
-- **巢湖学院 · 计算机科学与技术本科（2022—2026）**。
+| 项目 | 我负责的部分 | 值得展开的点 |
+| --- | --- | --- |
+| **AI Dock** | Agent 服务、业务工具、会话任务管理，协作前端接入 | 工具调用、事实校验卡片、任务取消与恢复 |
+| **core-data** | 独立设计、前后端开发与落地，约一周交付可用首版 | 混合检索、带证据的 Wiki、AI 审核、数据流水线 |
+| **万圣节互动活动** | 整体后端、前端还原、活动 Agent、部署运维和埋点 | 约一周开发上线，活动单日新增注册峰值约 **1000 人** |
 
 <details>
-<summary><strong>竞赛与论文</strong></summary>
+<summary>🔎 展开看看技术细节与数据规模</summary>
 
-- 2025 年第十九届挑战杯：**国家级二等奖、省级金奖**。
-- 2025 年中国国际大学生创新大赛：**国家级铜奖、省级一等奖**。
+**AI Dock**：基于 Pi Agent 接入真实业务工具；校验卡片实体、事实来源和允许执行的动作。用任务持久化、Worker 租约、执行版本校验及调用去重，处理取消、重试和旧结果写入。
+
+**core-data**：用 PostgreSQL / PostGIS / pgvector / pg_trgm 融合画像向量、特点关系和文字召回，经 RRF 与模型重排返回结果及证据。模型只读查证，由执行器校验后写入，保留快照和撤回记录；流水线支持暂停续跑、重试、负载调节和预算预扣。
+
+**万圣节活动**：设计六站 NPC 对话，结合商场资料、任务与兑换进度组织上下文，支持跨角色记忆、SSE 流式回复、限流、超时和本地兜底。
+
+数据规模：约 **7.4 万条地点记录**、**45 万余条商品与门店关联**、**9000 余条 AI 来源处理记录**。
+
+<sub>规模来自 2026-11-17 简历整理时的数据库副本；AI 来源记录创建于 11 月 5—12 日，包含不同处理状态。注册峰值为活动整体成果。</sub>
+
+</details>
+
+<details>
+<summary>🏅 竞赛、论文与教育经历</summary>
+
+- 巢湖学院 · 计算机科学与技术本科（2022—2026）。
+- 第十九届挑战杯：**国家级二等奖、省级金奖**。
+- 中国国际大学生创新大赛：**国家级铜奖、省级一等奖**。
 - 第九届数维杯大学生数学建模挑战赛：**全国第七名**。
 - 第十六届中国大学生计算机设计大赛：**国家级三等奖**。
 - 以第一作者发表计算机与医工交叉方向 **SCI 二区期刊论文 1 篇**。
@@ -96,4 +80,7 @@ AI 来源处理量统计于 2026 年 11 月 5—12 日，包含不同处理状�
 
 ---
 
-欢迎交流 **Agent 工程、知识检索、开发者工具与自动化**，也欢迎在开源项目中提交 Issue 或 PR。
+<p align="center">
+  <samp>把有用的想法，做成能用的东西。</samp><br />
+  <a href="mailto:1583701031@qq.com">1583701031@qq.com</a>
+</p>

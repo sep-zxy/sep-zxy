@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="238" viewBox="0 0 600 238" role="img" aria-labelledby="title desc">
+<title id="title">GameMode Switcher</title><desc id="desc">切换游戏与日常环境，编排进程、代理与状态恢复。Rust、Tauri v2、Windows。</desc>
+<rect x="1" y="1" width="598" height="236" rx="16" fill="#eff7f8" stroke="#cde0e3"/>
+<g font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif">
+<text x="30" y="49" font-size="13" letter-spacing="1.5" fill="#527b85">桌面自动化</text>
+<text x="30" y="89" font-size="28" font-weight="700" fill="#203d46">GameMode Switcher</text>
+<text x="30" y="127" font-size="18" fill="#4b6d76">一键进入游戏，恢复日常环境。</text>
+<text x="30" y="161" font-size="14" fill="#68858c">进程编排 / 代理管理 / 状态恢复</text>
+<text x="30" y="208" font-size="13" fill="#527b85">Rust · Tauri v2 · Windows</text>
+<text x="566" y="208" text-anchor="end" font-size="15" fill="#347d8b">查看源码 ↗</text>
+</g>
+<g transform="translate(500 42)" fill="none" stroke="#659aa7" stroke-width="2.5"><rect x="0" y="0" width="62" height="30" rx="15" fill="#d7eaed"/><circle cx="46" cy="15" r="9" fill="#6ba5b2" stroke="none"/></g>
+</svg>
