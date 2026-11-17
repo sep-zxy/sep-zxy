@@ -61,25 +61,52 @@
 
 ### Open Source
 
-**知识与学习系统**
-
-<a href="https://github.com/sep-zxy/zhizhi"><img src="./assets/zhizhi-geek.webp" width="65%" alt="知枝 Zhizhi：从代码实践，到自己的知识。" /></a>
-
-- **[知枝 · Zhizhi](https://github.com/sep-zxy/zhizhi)** — 将 Git 提交与代码证据组织为知识候选、理解练习与可编辑 Wiki，连接真实项目实践和 Obsidian。使用 Python、React 与 Electron，采用 Local-first 工作区。
-- **[知枝 Next](https://github.com/sep-zxy/zhizhi-next)** — 沿着知枝的实践，继续探索材料收集、原子知识卡、主题 Wiki 和有依据的知识关联，持续开发中。
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/sep-zxy/zhizhi"><img src="./assets/project-zhizhi.svg" width="48" height="48" alt="知枝 · Zhizhi图标" /></a><br />
+      <strong><a href="https://github.com/sep-zxy/zhizhi">知枝 · Zhizhi</a></strong><br />
+      <p>从 Git 与代码证据提炼知识，经过理解练习沉淀到 Obsidian。</p>
+      <sub>Python · React · Electron</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/sep-zxy/zhizhi-next"><img src="./assets/project-zhizhi-next.svg" width="48" height="48" alt="知枝 Next图标" /></a><br />
+      <strong><a href="https://github.com/sep-zxy/zhizhi-next">知枝 Next</a></strong><br />
+      <p>连接材料、项目实践与知识 Wiki，探索有依据的知识关联。开发中。</p>
+      <sub>Knowledge Systems · Local-first</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/sep-zxy/game-mode-rust"><img src="./assets/project-gamemode.svg" width="48" height="48" alt="GameMode Switcher图标" /></a><br />
+      <strong><a href="https://github.com/sep-zxy/game-mode-rust">GameMode Switcher</a></strong><br />
+      <p>用场景预设编排应用启停、代理切换和环境恢复。</p>
+      <sub>Rust · Tauri · Windows</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/sep-zxy/Auto-login-on-campus-network"><img src="./assets/project-portal.svg" width="48" height="48" alt="校园网认证自动化图标" /></a><br />
+      <strong><a href="https://github.com/sep-zxy/Auto-login-on-campus-network">校园网认证自动化</a></strong><br />
+      <p>用无头浏览器编排 Portal 状态检测、表单填充与后台登录。</p>
+      <sub>Python · Playwright · AutoHotkey</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/sep-zxy/Better-CE-Switch"><img src="./assets/project-ime.svg" width="48" height="48" alt="Better-CE-Switch图标" /></a><br />
+      <strong><a href="https://github.com/sep-zxy/Better-CE-Switch">Better-CE-Switch</a></strong><br />
+      <p>通过快捷键和超时回切，管理中英文输入法。</p>
+      <sub>AutoHotkey · Automation</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/sep-zxy?tab=repositories"><img src="./assets/project-more.svg" width="48" height="48" alt="更多公开代码图标" /></a><br />
+      <strong><a href="https://github.com/sep-zxy?tab=repositories">更多公开代码</a></strong><br />
+      <p>查看其他开源工具、实验与持续迭代的项目。</p>
+      <sub>Repositories</sub>
+    </td>
+  </tr>
+</table>
 
 <sub>知枝基于 AhaDiff 继续开发，保留上游署名与许可证。</sub>
-
-<details>
-<summary><strong>Developer Tooling · Rust / Tauri / Automation</strong></summary>
-
-<a href="https://github.com/sep-zxy/game-mode-rust"><img src="./assets/gamemode-geek.webp" width="65%" alt="GameMode Switcher：切换游戏与日常工作环境。" /></a>
-
-- **[GameMode Switcher](https://github.com/sep-zxy/game-mode-rust)** — 从 Python MVP 迭代到 Rust + Tauri v2，编排应用启停、Clash / TUN / 系统代理切换与状态恢复。
-- **[校园网自动登录助手](https://github.com/sep-zxy/Auto-login-on-campus-network)** — 面向巢湖学院，使用 Python / Playwright 完成状态检测和开机静默登录。
-- **[Better-CE-Switch](https://github.com/sep-zxy/Better-CE-Switch)** — 用快捷键与超时回切管理中英文输入法。
-
-</details>
 
 ---
 
