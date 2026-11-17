@@ -14,7 +14,7 @@
   <a href="mailto:1583701031@qq.com">联系我</a>
 </p>
 
-我是周鑫宇，主要构建 **有状态的 Agent 应用与可追溯的知识系统**。实践覆盖工具协议、上下文与记忆、混合检索和持久化任务执行，也开发 Local-first 应用与自动化工具。
+我是zxy，主要构建 **有状态的 Agent 应用与可追溯的知识系统**。实践覆盖工具协议、上下文与记忆、混合检索和持久化任务执行，也开发 Local-first 应用与自动化工具。
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
